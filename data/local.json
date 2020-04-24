@@ -2,15 +2,20 @@
     "local": {
         "SplashImage": "image/splash.png",
         "DefaultCenter": [
-            34.85084,
-            135.62033
+            34.73648,
+            135.50901
         ],
         "DefaultZoom": 15,
         "MinZoomLevel": 15,
         "attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">© MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">© OpenStreetMap contributors</a>",
-        "style": "https://api.maptiler.com/maps/3c10e59f-b7de-4ca9-b95b-75e30257f090/style.json?key=Eq2IyrHsOEGFU1W1fvd7"
+        "style": "https://api.maptiler.com/maps/jp-mierune-streets/style.json?key=bf7MVXlu8mpEMGNNJ1by"
     },
     "menu": [
+        {
+            "glot-model": "owner",
+            "linkto": "https://github.com/K-Sakanoshita/takeaway",
+            "divider": true
+        },
         {
             "glot-model": "id_edit_manual",
             "linkto": "https://maripo.org/osm_beginners_guide/",
@@ -29,11 +34,6 @@
         {
             "glot-model": "openstreetmap",
             "linkto": "https://www.openstreetmap.org/",
-            "divider": false
-        },
-        {
-            "glot-model": "owner",
-            "linkto": "https://github.com/K-Sakanoshita/takeaway",
             "divider": false
         }
     ],
