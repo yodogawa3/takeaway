@@ -153,7 +153,7 @@ var Takeaway = (function () {
 
             let openhour;
             if (tags["opening_hours:covid19"]) {
-                openhour = tags.opening_hours;
+                openhour = tags["opening_hours:covid19"];
             } else {
                 openhour = tags.opening_hours == null ? "-" : tags.opening_hours;
             }
