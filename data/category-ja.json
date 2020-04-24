@@ -114,6 +114,6 @@
             "no": "配達なし",
             "only": "配達のみ"
         },
-        "suffix_covid19": "(臨時)"
+        "suffix_covid19": ""
     }
 }
