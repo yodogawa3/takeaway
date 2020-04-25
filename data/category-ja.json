@@ -106,15 +106,6 @@
             "yakitori": "焼鳥"
         },
         "delivery": {
-<<<<<<< HEAD
-            "yes": "配達あり",
-            "no": "配達なし",
-            "only": "配達のみ"
-        },
-        "suffix_covid19": ""
-    }
-}
-=======
             "yes": "宅配あり",
             "no": "宅配なし",
             "only": "宅配のみ"
@@ -122,4 +113,3 @@
         "suffix_covid19": "(暫定)"
     }
 }
->>>>>>> upstream/master
