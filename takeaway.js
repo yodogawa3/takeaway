@@ -58,7 +58,7 @@ $(document).ready(function () {
         $(window).resize(DisplayStatus.window_resize);      // 画面サイズに合わせたコンテンツ表示切り替え
         map.on('moveend', Marker.event_move);               // マップ移動時の処理
         map.on('zoomend', function (e) {                    // ズーム時のメッセージ表示
-            let msg = map.getZoom() < Conf.local.MinZoomLevel ? MoreZoomMsg : "";
+            let msg = map.getZoom() < Conf.local.IconViewZoom ? MoreZoomMsg : "";
             DisplayStatus.morezoom(msg);
         });
 
@@ -103,8 +103,8 @@ var Takeaway = (function () {
             } else {
                 targets = keys;
             };
-            if (map.getZoom() < Conf.local.MinZoomLevel) {
-                console.log("Takeaway: get end(Conf.local.MinZoomLevel).");
+            if (map.getZoom() < Conf.local.IconViewZoom) {
+                console.log("Takeaway: get end(Conf.local.IconViewZoom).");
                 Takeaway.update();
                 callback();
             } else {

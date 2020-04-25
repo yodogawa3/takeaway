@@ -273,7 +273,7 @@ var OvPassCnt = (function () {
                 } else {
                     DisplayStatus.progress(0);                  // Not With Cache range
                     Cache = { "geojson": [], "targets": [] };
-                    let magni = (ZoomLevel - Conf.local.MinZoomLevel) < 1 ? 0.125 : (ZoomLevel - Conf.local.MinZoomLevel) / 4;
+                    let magni = (ZoomLevel - Conf.local.IconViewZoom) < 1 ? 0.125 : (ZoomLevel - Conf.local.IconViewZoom) / 4;
                     let offset_lat = (LL.NW.lat - LL.SE.lat) * magni;
                     let offset_lng = (LL.SE.lng - LL.NW.lng) * magni;
                     let SE_lat = LL.SE.lat - offset_lat;
