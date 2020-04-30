@@ -19,17 +19,17 @@
         },
         {
             "glot-model": "twitter_nishiyodogawa",
-            "linkto": "https://twitter.com/hashtag/%E8%A5%BF%E6%B7%80%E5%B7%9D%E3%82%A8%E3%83%BC%E3%83%AB%E9%A3%AF?src=hashtag_click",
+            "linkto": "https://twitter.com/hashtag/%E8%A5%BF%E6%B7%80%E5%B7%9D%E3%82%A8%E3%83%BC%E3%83%AB%E9%A3%AF",
             "divider": false
         },
         {
             "glot-model": "twitter_yodogawa",
-            "linkto": "https://twitter.com/hashtag/%E3%83%86%E3%82%A4%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88%E6%B7%80%E5%B7%9D%E5%8C%BA?src=hashtag_click",
+            "linkto": "https://twitter.com/hashtag/%E6%B7%80%E5%B7%9D%E3%82%A8%E3%83%BC%E3%83%AB%E9%A3%AF",
             "divider": false
         },
         {
             "glot-model": "twitter_higashiyodogawa",
-            "linkto": "https://twitter.com/hashtag/%E6%9D%B1%E6%B7%80%E5%B7%9D%E3%82%A8%E3%83%BC%E3%83%AB%E9%A3%AF?src=hashtag_click",
+            "linkto": "https://twitter.com/hashtag/%E6%9D%B1%E6%B7%80%E5%B7%9D%E3%82%A8%E3%83%BC%E3%83%AB%E9%A3%AF",
             "divider": true
         },
         {
@@ -39,7 +39,7 @@
         },
         {
             "glot-model": "instagram_yodogawa",
-            "linkto": "https://www.instagram.com/explore/tags/%E3%83%86%E3%82%A4%E3%82%AF%E3%82%A2%E3%82%A6%E3%83%88%E6%B7%80%E5%B7%9D%E5%8C%BA/?hl=ja",
+            "linkto": "https://www.instagram.com/explore/tags/%E6%B7%80%E5%B7%9D%E3%82%A8%E3%83%BC%E3%83%AB%E9%A3%AF/?hl=ja",
             "divider": false
         },
         {
