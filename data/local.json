@@ -9,7 +9,8 @@
         "IconViewZoom": 15,
         "TextViewZoom": 17,
         "attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">© MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">© OpenStreetMap contributors</a>",
-        "style": "https://api.maptiler.com/maps/a7b3bf41-927f-42ae-821e-aab291bc9f72/style.json?key=bf7MVXlu8mpEMGNNJ1by"
+        "style": "https://api.maptiler.com/maps/3c10e59f-b7de-4ca9-b95b-75e30257f090/style.json?key=Eq2IyrHsOEGFU1W1fvd7",
+        "GoogleAnalytics": "UA-165626594-2"
     },
     "menu": [
         {
@@ -78,8 +79,7 @@
                 "way[\"takeaway:covid19\"]"
             ],
             "list": true,
-            "zoom": 15,
-            "icon": "./image/bentou.svg"
+            "zoom": 15
         },
         "delivery": {
             "ovpass": [
@@ -89,9 +89,7 @@
                 "way[\"delivery:covid19\"]"
             ],
             "list": true,
-            "zoom": 15,
-            "icon": "./image/delivery.svg"
-        },
+            "zoom": 15        },
         "takeaway_shop": {
             "ovpass": [
                 "node[\"shop\"=\"bakery\"]",
@@ -102,16 +100,14 @@
                 "way[\"shop\"=\"alcohol\"]"
             ],
             "list": true,
-            "zoom": 15,
-            "icon": "./image/bentou.svg"
+            "zoom": 15
         },
         "vending_machine": {
             "ovpass": [
                 "node[\"amenity\"=\"vending_machine\"][\"vending\"=\"drinks\"]"
             ],
             "list": false,
-            "zoom": 17,
-            "icon": "./image/vending.svg"
+            "zoom": 18
         },
         "library": {
             "ovpass": [
@@ -119,8 +115,7 @@
                 "way[\"amenity\"=\"library\"]"
             ],
             "list": true,
-            "zoom": 15,
-            "icon": "./image/library.svg"
+            "zoom": 15
         }
     }
 }
