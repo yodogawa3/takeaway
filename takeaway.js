@@ -11,7 +11,7 @@ const OvGetError = "サーバーからのデータ取得に失敗しました。
 // const OvServer = 'https://overpass.kumi.systems/api/interpreter' // or 'https://overpass-api.de/api/interpreter' or 'https://overpass.nchc.org.tw/api/interpreter'
 const OvServer = 'https://overpass.nchc.org.tw/api/interpreter'
 const LANG = (window.navigator.userLanguage || window.navigator.language || window.navigator.browserLanguage).substr(0, 2) == "ja" ? "ja" : "en";
-const FILES = ['modals.html', 'data/category-' + LANG + '.json', 'data/datatables-' + LANG + '.json', 'data/local.json'];
+const FILES = ['modals.html', 'data/category-' + LANG + '.json', 'data/datatables-' + LANG + '.json', 'data/icon.json', 'data/local.json'];
 
 $(document).ready(function () {
 
@@ -23,7 +23,7 @@ $(document).ready(function () {
     $.when.apply($, jqXHRs).always(function () {
         // initialize variable
         $("#Modals").html(arguments[0][0]);
-        for (let idx = 1; idx <= 3; idx++) {
+        for (let idx = 1; idx <= 4; idx++) {
             let arg = arguments[idx][0];
             Object.keys(arg).forEach(key1 => {
                 Conf[key1] = {};
@@ -34,6 +34,15 @@ $(document).ready(function () {
         DisplayStatus.splash(true);         // Splash Screen
         DisplayStatus.make_menu();          // Menu
         DataList.init();
+
+        // Google Analytics
+        if (Conf.local.GoogleAnalytics !== "") {
+            $('head').append('<script async src="https://www.googletagmanager.com/gtag/js?id=' + Conf.local.GoogleAnalytics + '"></script>');
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); };
+            gtag('js', new Date());
+            gtag('config', Conf.local.GoogleAnalytics);
+        };
 
         // initialize leaflet
         console.log("initialize leaflet.");
@@ -160,7 +169,7 @@ var Takeaway = (function () {
             };
             let RegexPTN = [[/\|\|/g, "<br>"], [/;/g, "<br>"]];
             Object.keys(Conf.opening_hours).forEach(key => {
-                RegexPTN.push([new RegExp(key, "g"),Conf.opening_hours[key]]);
+                RegexPTN.push([new RegExp(key, "g"), Conf.opening_hours[key]]);
             });
             RegexPTN.forEach(val => { openhour = openhour.replace(val[0], val[1]) });
             if (tags["opening_hours:covid19"] != null) { openhour += Conf.category.suffix_covid19 }
@@ -213,9 +222,12 @@ var Takeaway = (function () {
                 delname = delname == undefined ? "?" : delname;
             }
             $("#delivery").html(delname);
-
-            $("#phone").attr('href', tags.phone == null ? "" : "tel:" + tags.phone);
-            $("#phone_view").html(tags.phone == null ? "-" : tags.phone);
+            
+            if (tags.phone != null) {
+                $("#phone").html("<a href=\"" + ("tel:" + tags.phone) + "\">" + tags.phone + "</a>");
+            } else {
+                $("#phone").html("-");
+            }
 
             let fld = {};
             fld.website = tags["contact:website"] == null ? tags["website"] : tags["contact:website"];
