@@ -7,6 +7,30 @@
         "ja": "みんなでテイクアウトMAP <開発版>について",
         "en": "about Takeout MAP with everyone"
     },
+    "twitter_nishiyodogawa": {
+        "ja": "twitter検索 - #西淀川エール飯",
+        "en": "twitter search - Nishiyodogawa Yale"
+    },
+    "twitter_yodogawa": {
+        "ja": "twitter検索 - #淀川エール飯",
+        "en": "twitter search - Takeout Yodogawa Ward"
+    },
+    "twitter_higashiyodogawa": {
+        "ja": "twitter検索 - #東淀川エール飯",
+        "en": "twitter search - Higashiyodogawa Yale"
+    },
+    "instagram_nishiyodogawa": {
+        "ja": "instagram検索 - #西淀川エール飯",
+        "en": "instagram search - Nishiyodogawa Yale"
+    },
+    "instagram_yodogawa": {
+        "ja": "instagram検索 - #淀川エール飯",
+        "en": "instagram search - Takeout Yodogawa Ward"
+    },
+    "instagram_higashiyodogawa": {
+        "ja": "instagram検索 - #東淀川エール飯",
+        "en": "instagram search - Higashiyodogawa Yale"
+    },
     "openstreetmap": {
         "ja": "データ元のOpenStreetMapについて",
         "en": "About the data source OpenStreetMap"
